@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="terminal"></div>
+
+    <div id="settings-overlay" class="overlay hidden">
+      <div class="settings-box">
+        <h2>Customize Terminal UI</h2>
+        <form id="settings-form">
+          <div class="setting-group" data-key="title">
+            <h3>Title</h3>
+            Color: <input type="color" name="color" /><br />
+            Font Size: <input type="number" name="fontSize" /> px
+          </div>
+          <div class="setting-group" data-key="prompt">
+            <h3>Prompt ($)</h3>
+            Color: <input type="color" name="color" /><br />
+            Font Size: <input type="number" name="fontSize" /> px
+          </div>
+          <div class="setting-group" data-key="input">
+            <h3>Input</h3>
+            Color: <input type="color" name="color" /><br />
+            Font Size: <input type="number" name="fontSize" /> px
+          </div>
+          <div class="setting-group" data-key="output">
+            <h3>Output</h3>
+            Color: <input type="color" name="color" /><br />
+            Font Size: <input type="number" name="fontSize" /> px
+          </div>
+          <div class="setting-group" data-key="link">
+            <h3>Link</h3>
+            Color: <input type="color" name="color" /><br />
+            Font Size: <input type="number" name="fontSize" /> px
+          </div>
+          <button type="submit">Save</button>
+          <button type="button" id="reset-ui">Reset</button>
+          <button type="button" onclick="cancelSettings()">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="terminal.js"></script>
+  </body>
+</html>

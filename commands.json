@@ -1,0 +1,24 @@
+{
+    "help": [
+      "Available commands:",
+      "about    - Learn about me",
+      "projects - See my work",
+      "contact  - Get in touch",
+      "settings - Open settings",
+      "clear - Clear the terminal"
+    ],
+    "about": [
+      "I am a developer passionate about coding and UI/UX design.",
+      "I specialize in front-end and back-end development."
+    ],
+    "projects": [
+      "Check out my GitHub: https://github.com/rakeshkanna-rk",
+      "Portfolio Website, Terminal-based CLI, Open Source Contributions"
+    ],
+    "contact": [
+      "Email: rakesh@example.com",
+      "LinkedIn: https://linkedin.com/in/rakeshkannas"
+    ],
+    "clear": []
+  }
+  

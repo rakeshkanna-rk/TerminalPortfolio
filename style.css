@@ -1,0 +1,124 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+#terminal {
+  width: 100%;
+  margin: auto;
+  height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 30px;
+}
+
+#terminal,
+.overlay {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+#terminal::-webkit-scrollbar,
+.overlay::-webkit-scrollbar {
+  display: none; /* Chrome & Safari */
+}
+
+.line,
+.output {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  width: 100%;
+}
+a {
+  text-decoration: underline;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.overlay.hidden {
+  display: none;
+}
+.settings-box {
+  background: #111;
+  padding: 20px;
+  border: 2px solid #444;
+  color: white;
+  max-height: 80vh;
+  width: 30%;
+  overflow-y: auto;
+}
+.setting-group {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.setting-group input {
+  margin: 5px 0;
+}
+
+.overlay button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  background: rgb(84, 84, 255);
+  color: aliceblue;
+}
+
+.overlay button:last-child {
+  color: rgb(84, 84, 255);
+  background: aliceblue;
+}
+
+.overlay input[type="number"] {
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #ddd;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+}
+
+.overlay input[type="number"]:focus {
+  border: 1px solid rgb(84, 84, 255);
+}
+
+.overlay input[type="color"] {
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #ddd;
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.overlay input[type="color"]:focus {
+  border: 1px solid rgb(84, 84, 255);
+}
