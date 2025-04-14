@@ -122,3 +122,12 @@ a {
 .overlay input[type="color"]:focus {
   border: 1px solid rgb(84, 84, 255);
 }
+
+@media screen and (max-width: 600px) {
+  #terminal {
+    padding: 10px;
+  }
+  .settings-box {
+    width: 90%;
+  }
+}
